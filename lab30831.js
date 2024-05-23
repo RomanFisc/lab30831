@@ -21,23 +21,27 @@
 // Part 2 Prime Time
 //
 
-// let n = 4
-// while (n < 100) {
-//   if (n ) {
-//     console.log(n)
-//     break
-//   } else {
-//     num ++ 
-//   }
+
+// for (let i = 2; i < num; i++) {
+//   if (num % i === 0) {
+//     primeNum = false;
+//   } 
 // }
 
-let primeNum = true; 
-num = 7
+let num = 9
 
-for (let i = 2; i < num; i++) {
-  if (num % i === 0) {
-    primeNum = false;
-  } 
+while (true) {
+  let primeNum = true;
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      primeNum = false;
+    } 
+  }
+
+  if (primeNum === true) {
+    console.log(num);
+    break;
+  }
+  num++;
 }
 
-console.log(primeNum)
